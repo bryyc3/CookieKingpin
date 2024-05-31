@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookie KingPin</title>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+        <link rel="stylesheet" href="/shopper.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src = "/script.js"></script>
+    </head>
+
+    <body>
+        <div class="title_cart">
+            <h1 class="title">COOKIE KINGPIN</h1>
+            <div class="cart_container">
+                <button class = "material-symbols-outlined cart" onclick="openCheckout()">shopping_cart</button>
+                <div class="items_in_cart" id="num_of_items"></div>
+            </div>
+        </div>
+
+        <div class="cart_checkout" id="cart">
+            <button class="material-symbols-outlined close" onclick="openCheckout()">close</button>
+            <h5 id="noItemsMsg">Cart is currently empty</h5>
+            <div id="checkoutItems"></div>
+            <div class="total-button_cont">
+                <div class="total">
+                    <p class="total_text">Total:</p>
+                    <p class="total_amount">$<span id="checkoutTotal">0.00</span></p>
+                </div>
+                <button class="complete_checkout" onclick="initiateCheckout()">Checkout</button>
+            </div>
+        </div>
+
+        <div class="cookie_arrow_wrapper">
+            <button class = "icon material-symbols-outlined arrow arrow-left" onclick="arrowClicked('-')">arrow_back_ios</button>
+            <img src = "/images/smorescirc.png" id = "cookie_element" class="cookies">
+            <button class = "icon material-symbols-outlined arrow arrow-right" onclick="arrowClicked('+')">arrow_forward_ios</button>
+        </div>
+
+        <div class = "circle_cont">
+            <div class= "circle" id="circle1" onclick="circleClicked('0')"></div>
+            <div class= "circle" id="circle2" onclick="circleClicked('1')"></div>
+            <div class= "circle" id="circle3" onclick="circleClicked('2')"></div>
+            <div class= "circle" id="circle4" onclick="circleClicked('3')"></div>
+            <div class= "circle" id="circle5" onclick="circleClicked('4')"></div>
+            <div class= "circle" id="circle6" onclick="circleClicked('5')"></div>
+        </div>
+
+        <div class = "details">
+            <h2 id="cookie_flavor">Cookie and Smores</h2>
+            <button class = "add_cart" onclick="addItemToCart('slider', 0)">ADD TO CART<p id="cookie_price">$12.04</p></button>
+        </div>       
+        <h3>(Cart must contain 6 or 12 cookies to checkout)</h3>
+
+        <section class="cookie_list" id="cookieSection">
+        </section>
+
+        <h3>If Any Issues Arise Please Contact Us!</h3>
+        <h3>Customer Support Email: <a href="">cookiekingpin365@gmail.com</a></h3>
+    </body>
+</html> 
