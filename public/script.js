@@ -8,7 +8,7 @@
 
 
  async function getProducts(){
-    const response = await axios.get('https://cookiekingpin.onrender.com/');
+    const response = await axios.get('https://cookiekingpin.onrender.com/products');
     cookieArray = response.data.products;
     createCookies();//call function that populates cookies onto the page
 }
