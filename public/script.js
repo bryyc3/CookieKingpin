@@ -8,7 +8,7 @@ let numOfItems = 0;
 
 
 async function getProducts(){
-   const response = await axios.get(`http://localhost:5200/products`);
+   const response = await axios.get(`https://cookiekingpin.org/products`);
    cookieArray = response.data.products;
    createCookies();//call function that populates cookies onto the page
 }
