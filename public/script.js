@@ -19,7 +19,6 @@ function createCookies(){
    const section = document.getElementById('cookieSection');
 
    const cookiesHTML = cookieArray.map((cookie, i) =>{
-    console.log(cookie);
        return(
            `<div class="cookie_description_container">
                <img src="${cookie.image}" alt="${cookie.name}" class="cookie_item">
