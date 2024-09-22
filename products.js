@@ -9,22 +9,16 @@ function Cookie(name, price, image, circImg, description, priceNum, id){
     this.priceInCents = priceNum * 100;
     this.id = id;
  }
- const chocChipCookieDough = new Cookie("Cookie Dough", "$12.04", 'images/cookiedough.PNG', "images/cookiedoughcirc.PNG", "Our delicious OG chocolate chip cookie batter infused with movie theater chocolate chip cookie dough! ",12.04, 0);
- const chocChip = new Cookie("OG Triple Chocolate Chip", "$12.04", '/images/chocchip.PNG', "/images/chocchipcirc.PNG", "Keep it ORIGINAL! Our deluctable chocolate chip cookies stuffed with enormous amounts of semi-sweet chocolate chips. ", 12.04, 1);
- const smores = new Cookie("Cookie and Smores", "$12.04", '/images/smores.PNG', "/images/smorescirc.PNG", "This cookie saves all the hussle and bussle of making a smore and packs TEN TIMES the flavor!", 12.04, 2);
- const whiteChocChip = new Cookie("OG White Chocolate Chip", "$12.04", '/images/whitechoc.PNG', "/images/whitechoccirc.PNG", "White chocolate chip morsels infused into a flavorful cookie!", 12.04, 3);
- const mm = new Cookie("M&M", "$12.04", '/images/mm.PNG', "/images/mm.PNG", "Simple, sweet and to the point. M&M candies packed into our OG cookie batter.", 12.04, 4);
- const whiteReesesPB = new Cookie("White Chocolate PB Cup", "$12.04", "/images/reeses.PNG", "/images/reesescirc.PNG", "Reeses Peanut Butter Cups combined with our white chocolate chip cookie batter!", 12.04, 5);
- const oreo = new Cookie("Cookie, Oreo and Cream", "$12.04", '/images/oreo.PNG', "/images/oreo.PNG", "No, youre not dreaming. We placed an Oreo cookie and Hershey Cookies and Cream chocolate bar into OUR cookie!", 12.04, 6);
+ const pumpkinOreo = new Cookie("Oreo Pumpkin Spice", "$8.00", '/images/pumpkinSpice.PNG', "/images/pumpkinSpice.PNG", "Oreo Pumpkin Spice White Chocolate Chip Cookie, perfect for fall! This limited-edition cookie combines the gooey cookie texture with the flavors of pumpkin spice, white chocolate chips, and Oreo Pumpkin Spice cookies for a decadent, seasonal treat.",8.00, 0);
+ const chocChip = new Cookie("OG Triple Chocolate Chip", "$8.00", '/images/chocchip.PNG', "/images/chocchipcirc.PNG", "Keep it ORIGINAL! Our deluctable chocolate chip cookies stuffed with enormous amounts of semi-sweet chocolate chips. ", 8.00, 1);
+ const reesesPumpkin = new Cookie("Peanut Butter Pumpkin Head", "$8.00", '/images/reesesPumpkin.PNG', "/images/reesesPumpkin.PNG", "Cookie that has a chunky, gooey texture indulgence of Reeses Peanut Butter Cup Pumpkins and Peanut Butter M&Ms to give you that halloween vibe! This is a large, thick cookie that is soft and chewy on the inside, with the signature crisp outer edges.", 8.00, 2);
+ const whiteChocChip = new Cookie("Ghost Pillsbury", "$8.00", '/images/whiteChoc.PNG', "/images/whiteChocCirc.PNG", "White Chocolate Chip Cookie Kingpin-Style Cookie infused with a Ghost Pillsbury Sugar Cookie** on top. These cookies are decadent, with a soft, gooey interior, and combining the white chocolate chip cookie with a fun seasonal twist makes it extra special!", 8.00, 3);
 
  
-exports.productList = [smores, chocChipCookieDough, whiteReesesPB, oreo, chocChip, mm, whiteChocChip];
+exports.productList = [pumpkinOreo, chocChip, whiteChocChip,reesesPumpkin];
 exports.storeItems =  new Map([
-    [0, chocChipCookieDough ],
+    [0,  pumpkinOreo],
     [1, chocChip],
-    [2, smores ],
-    [3, whiteChocChip ],
-    [4,  mm ],
-    [5, whiteReesesPB ],
-    [6, oreo]
+    [2,  reesesPumpkin],
+    [3,  whiteChocChip]
  ]);
